@@ -2,6 +2,9 @@
 keytool -genkeypair -alias ming-jwt -validity 3650 -keyalg RSA -dname "CN=jwt,OU=jwt,O=jtw,L=zurich,S=zurich,C=CH" -keypass ming123 -keystore ming-jwt.jks -storepass ming123
 
 -alias 别名 -keypass和-storepass为密码选项 -validity 配置过期时间/天
+ming-jwt.jks 放置 uaa-service/resource
 
 解密jks
 keytool -list -rfc --keystore ming-jwt.jks | openssl x509 -inform pem -pubkey
+
+公钥文件public.cert 放置user-service/resource

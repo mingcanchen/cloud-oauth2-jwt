@@ -43,17 +43,4 @@
         </dependencies>
     </dependencyManagement>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <configuration>
-                    <nonFilteredFileExtensions>cert</nonFilteredFileExtensions>
-                    <nonFilteredFileExtensions>jks</nonFilteredFileExtensions>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
