@@ -3,6 +3,7 @@ package com.ming.utils;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+
 /**
  * @author chenmingcan
  */

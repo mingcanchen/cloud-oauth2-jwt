@@ -13,14 +13,15 @@ import org.springframework.util.FileCopyUtils;
 
 import java.io.IOException;
 
+
 /**
  * @author chenmingcan
  */
 @Configuration
 public class JwtConfig {
-
     @Autowired
     JwtAccessTokenConverter jwtAccessTokenConverter;
+
     @Bean
     @Qualifier("tokenStore")
     public TokenStore tokenStore() {
@@ -28,10 +29,10 @@ public class JwtConfig {
     }
 
     @Bean
-    protected JwtAccessTokenConverter jwtAccessTokenConverter() {
-        JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
+    protected JwtAccessTokenConverter jwtTokenEnhancer() {
+        JwtAccessTokenConverter converter =  new JwtAccessTokenConverter();
         Resource resource = new ClassPathResource("public.cert");
-        String publicKey;
+        String publicKey ;
         try {
             publicKey = new String(FileCopyUtils.copyToByteArray(resource.getInputStream()));
         } catch (IOException e) {

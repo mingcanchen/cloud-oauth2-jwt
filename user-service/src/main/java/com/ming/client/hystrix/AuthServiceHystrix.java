@@ -5,7 +5,6 @@ import com.ming.client.AuthServiceClient;
 import com.ming.entity.JWT;
 import org.springframework.stereotype.Component;
 
-
 /**
  * @author chenmingcan
  */

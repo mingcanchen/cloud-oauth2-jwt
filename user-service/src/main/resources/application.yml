@@ -11,7 +11,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     password: root
     username: root
-    url: jdbc:mysql//localhost:3306/spring-cloud-oauth?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    url: jdbc:mysql://localhost:3306/spring-cloud-auth?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
 
   jpa:
     hibernate:

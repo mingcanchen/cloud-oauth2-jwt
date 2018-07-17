@@ -4,11 +4,12 @@ package com.ming.dao;
 import com.ming.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+
 /**
- * Created by fangzhipeng on 2017/5/27.
+ * @author chenmingcan
  */
 public interface UserDao extends JpaRepository<User, Long> {
 
-    User findByUsername(String username);
+	User findByUsername(String username);
 
 }

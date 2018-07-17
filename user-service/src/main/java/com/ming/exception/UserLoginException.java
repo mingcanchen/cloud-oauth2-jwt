@@ -1,5 +1,6 @@
 package com.ming.exception;
 
+
 /**
  * @author chenmingcan
  */
